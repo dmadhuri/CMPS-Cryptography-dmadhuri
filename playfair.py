@@ -242,7 +242,7 @@ class PlayFair:
         print('')
            
 print("Playfair Encryption Tool (P.E.T)")
-print("Written By: Vijaya Madhuri Devarapalli)")
+print("Written By: Vijaya Madhuri Devarapalli")
 print("********************************************************")
 print("Please enter a key: ")
 print("1.Encipher")
@@ -257,13 +257,13 @@ while(flag == 1):
     #Check if the user entered 1
     if(encryptOrDecrypt == '1'):
        print("Playfair Encryption Tool (P.E.T)")
-       print("Written By: Vijaya Madhuri Devarapalli)")
+       print("Written By: Vijaya Madhuri Devarapalli")
        print("********************************************************")
        print("Please enter a keyword :")
        key = input()
        print("********************************************************")
        print("Playfair Encryption Tool (P.E.T)")
-       print("Written By: Vijaya Madhuri Devarapalli)")
+       print("Written By: Vijaya Madhuri Devarapalli")
        print("********************************************************")
        print("Please enter a message :")
        message = input()
@@ -287,7 +287,7 @@ while(flag == 1):
             encrypt = encrypt + encryptList
    
        print("Playfair Encryption Tool (P.E.T)")
-       print("Written By: Vijaya Madhuri Devarapalli)")
+       print("Written By: Vijaya Madhuri Devarapalli")
        print("********************************************************")
        print("Your encrypted message is :")
        print(encrypt)
@@ -295,13 +295,13 @@ while(flag == 1):
 	#Check if the user entered 2   
     elif(encryptOrDecrypt == '2'):
         print("Playfair Encryption Tool (P.E.T)")
-        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("Written By: Vijaya Madhuri Devarapalli")
         print("********************************************************")
         print("Please enter a keyword :")
         key = input()
         print("********************************************************")
         print("Playfair Encryption Tool (P.E.T)")
-        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("Written By: Vijaya Madhuri Devarapalli")
         print("********************************************************")
         print("Enter a encrypted message :")
         message = input()
@@ -325,14 +325,14 @@ while(flag == 1):
             decrypt = decrypt + decryptList
   
         print("Playfair Encryption Tool (P.E.T)")
-        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("Written By: Vijaya Madhuri Devarapalli")
         print("********************************************************")
         print("Your decrypted message is :")
         print(decrypt)
         
     elif(encryptOrDecrypt == '3'):
         print("Playfair Encryption Tool (P.E.T)")
-        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("Written By: Vijaya Madhuri Devarapalli")
         print("********************************************************")
         print("You are Quitted from program.")
         flag = 0
