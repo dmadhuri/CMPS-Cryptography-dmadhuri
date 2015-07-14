@@ -242,82 +242,89 @@ class PlayFair:
         print('')
            
 
-###########################################################################
-#if __name__ == "__main__":
-    #message = "ThefoxhasfootproblemsandhasbeenhoodwinkedCanyoubeleiveit"
-    #key = "Mathematics is awesome foxy lady!!"
-    
-    #Prompting user to enter message
-    print("Enter keyword :")
-    key = input()
-	
-	#Prompting user to enter message
-    print("Enter message :")
-    message = input()
-    if(len(message) % 2 == 1):
-        message = message + 'X'
-	
-    myCipher = PlayFair(key,message)
-	
-	#convert the message to upper case
-    message = message.upper()
-	
-    myCipher.printNewKey()
-    myCipher.printNewMessage()
-    myCipher.printSquare()
-    myCipher.printTransposedSquare()
-    print("Playfair Encryption Tool (P.E.T)")
-    print("Written By: Vijaya Madhuri Devarapalli)")
-    print("********************************************************")
-    print("Please enter a key: ")
-    print("1.Encipher")
-    print("2.Decipher")
-    print("3.Quit")
-    encryptOrDecrypt = input()
-    print("********************************************************")
 
-    flag = 1
-    while(flag == 1):
-	
-	    #Check if the user entered 1
-        if(encryptOrDecrypt == '1'):
-           print(" Encryption")
-           flag = 0
-           i = 0
-           encrypt =''
-           while(i <= len(message)-1):
-                a = message[i]
-                b = message[i+1]
-                i = i+2
-                d = [a,b]
-                print(d)
-                encryptList = ''.join(myCipher.getCodedDigraph(d))
-                encrypt = encrypt + encryptList
-       
-            #print the encrypted message	   
-           print("Your encrypted message is :"+encrypt)
-            
-		#Check if the user entered 2   
-        elif(encryptOrDecrypt == '2'):
-            
-            flag = 0
-            j = 0
-            decrypt =''
-            while(j <= len(message)-1):
-                a = message[j]
-                b = message[j+1]
-                j = j+2
-                d = [a,b]
-                decryptList = ''.join(myCipher.getDecodedDigraph(d))
-                decrypt = decrypt + decryptList
+#Prompting user to enter message
+print("Enter keyword :")
+key = input()
+
+#Prompting user to enter message
+print("Enter message :")
+message = input()
+if(len(message) % 2 == 1):
+    message = message + 'X'
+
+myCipher = PlayFair(key,message)
+
+#convert the message to upper case
+message = message.upper()
+
+myCipher.printNewKey()
+myCipher.printNewMessage()
+myCipher.printSquare()
+myCipher.printTransposedSquare()
+print("Playfair Encryption Tool (P.E.T)")
+print("Written By: Vijaya Madhuri Devarapalli)")
+print("********************************************************")
+print("Please enter a key: ")
+print("1.Encipher")
+print("2.Decipher")
+print("3.Quit")
+encryptOrDecrypt = input()
+print("********************************************************")
+
+flag = 1
+while(flag == 1):
+
+    #Check if the user entered 1
+    if(encryptOrDecrypt == '1'):
+       print(" Encryption")
+       flag = 0
+       i = 0
+       encrypt =''
+       while(i <= len(message)-1):
+            a = message[i]
+            b = message[i+1]
+            i = i+2
+            d = [a,b]
+            print(d)
+            encryptList = ''.join(myCipher.getCodedDigraph(d))
+            encrypt = encrypt + encryptList
+   
+        #print the encrypted message	   
+       print("Your encrypted message is :"+encrypt)
+        
+	#Check if the user entered 2   
+    elif(encryptOrDecrypt == '2'):
+        
+        flag = 0
+        j = 0
+        decrypt =''
+        while(j <= len(message)-1):
+            a = message[j]
+            b = message[j+1]
+            j = j+2
+            d = [a,b]
+            decryptList = ''.join(myCipher.getDecodedDigraph(d))
+            decrypt = decrypt + decryptList
+  
+        print("Your decrypted message is "+ decrypt)
+        
+    elif(encryptOrDecrypt == '3'):
+        print("Exit ")
+        flag = 0
+
+
       
-            print("Your decrypted message is "+ decrypt)
-            
-        elif(encryptOrDecrypt == '3'):
-            print("Exit ")
-            flag = 0
+
+        
     
+
+
      
+    
+
+   
+
         
         
     
