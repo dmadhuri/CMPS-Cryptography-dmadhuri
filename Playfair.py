@@ -274,10 +274,10 @@ while(flag == 1):
        if(len(message) % 2 == 1):
             message = message + 'X'
 
-            myCipher = PlayFair(key,message)
+       myCipher = PlayFair(key,message)
 
-            #convert the message to upper case
-            message = message.upper()
+       #convert the message to upper case
+       message = message.upper()
        while(i <= len(message)-1):
             a = message[i]
             b = message[i+1]
@@ -312,10 +312,10 @@ while(flag == 1):
         if(len(message) % 2 == 1):
             message = message + 'X'
 
-            myCipher = PlayFair(key,message)
+        myCipher = PlayFair(key,message)
 
-            #convert the message to upper case
-            message = message.upper()
+        #convert the message to upper case
+        message = message.upper()
         while(j <= len(message)-1):
             a = message[j]
             b = message[j+1]
@@ -336,5 +336,4 @@ while(flag == 1):
         print("********************************************************")
         print("You are Quitted from program.")
         flag = 0
-
 
