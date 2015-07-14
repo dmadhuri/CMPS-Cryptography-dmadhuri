@@ -241,27 +241,6 @@ class PlayFair:
             print(list)
         print('')
            
-
-
-#Prompting user to enter message
-print("Enter keyword :")
-key = input()
-
-#Prompting user to enter message
-print("Enter message :")
-message = input()
-if(len(message) % 2 == 1):
-    message = message + 'X'
-
-myCipher = PlayFair(key,message)
-
-#convert the message to upper case
-message = message.upper()
-
-myCipher.printNewKey()
-myCipher.printNewMessage()
-myCipher.printSquare()
-myCipher.printTransposedSquare()
 print("Playfair Encryption Tool (P.E.T)")
 print("Written By: Vijaya Madhuri Devarapalli)")
 print("********************************************************")
@@ -277,28 +256,66 @@ while(flag == 1):
 
     #Check if the user entered 1
     if(encryptOrDecrypt == '1'):
-       print(" Encryption")
+       print("Playfair Encryption Tool (P.E.T)")
+       print("Written By: Vijaya Madhuri Devarapalli)")
+       print("********************************************************")
+       print("Please enter a keyword :")
+       key = input()
+       print("********************************************************")
+       print("Playfair Encryption Tool (P.E.T)")
+       print("Written By: Vijaya Madhuri Devarapalli)")
+       print("********************************************************")
+       print("Please enter a message :")
+       message = input()
+       print("********************************************************")
        flag = 0
        i = 0
        encrypt =''
+       if(len(message) % 2 == 1):
+            message = message + 'X'
+
+            myCipher = PlayFair(key,message)
+
+            #convert the message to upper case
+            message = message.upper()
        while(i <= len(message)-1):
             a = message[i]
             b = message[i+1]
             i = i+2
             d = [a,b]
-            print(d)
             encryptList = ''.join(myCipher.getCodedDigraph(d))
             encrypt = encrypt + encryptList
    
-        #print the encrypted message	   
-       print("Your encrypted message is :"+encrypt)
+       print("Playfair Encryption Tool (P.E.T)")
+       print("Written By: Vijaya Madhuri Devarapalli)")
+       print("********************************************************")
+       print("Your encrypted message is :")
+       print(encrypt)
         
 	#Check if the user entered 2   
     elif(encryptOrDecrypt == '2'):
-        
+        print("Playfair Encryption Tool (P.E.T)")
+        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("********************************************************")
+        print("Please enter a keyword :")
+        key = input()
+        print("********************************************************")
+        print("Playfair Encryption Tool (P.E.T)")
+        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("********************************************************")
+        print("Enter a encrypted message :")
+        message = input()
+        print("********************************************************")
         flag = 0
         j = 0
         decrypt =''
+        if(len(message) % 2 == 1):
+            message = message + 'X'
+
+            myCipher = PlayFair(key,message)
+
+            #convert the message to upper case
+            message = message.upper()
         while(j <= len(message)-1):
             a = message[j]
             b = message[j+1]
@@ -307,46 +324,17 @@ while(flag == 1):
             decryptList = ''.join(myCipher.getDecodedDigraph(d))
             decrypt = decrypt + decryptList
   
-        print("Your decrypted message is "+ decrypt)
+        print("Playfair Encryption Tool (P.E.T)")
+        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("********************************************************")
+        print("Your decrypted message is :")
+        print(decrypt)
         
     elif(encryptOrDecrypt == '3'):
-        print("Exit ")
+        print("Playfair Encryption Tool (P.E.T)")
+        print("Written By: Vijaya Madhuri Devarapalli)")
+        print("********************************************************")
+        print("You are Quitted from program.")
         flag = 0
 
 
-      
-
-        
-    
-
-
-     
-    
-
-   
-
-        
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
