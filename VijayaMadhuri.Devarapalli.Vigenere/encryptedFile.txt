@@ -1,0 +1,9 @@
+###############################################
+        # Name: Vijaya Madhuri Devarapalli
+        # Class: CMPS 4664 Cryptography
+        # Date: 27 July 2015
+        # Program 2 - Randomized Vigenere Cipher
+        ###############################################
+KeyWord is:MATH
+ Plain text Message is:Hi i am Vijaya Madhuri Devarapalli and i feel like this vigenere cipher interesting
+ Encrypted Message is:C*xBg&N3b*Oth&xT6PK'**xo8Wb56~b$z*xt2PxBgg*jz7>BWxxZ\*}3]*Ej2xBjg;9}\xB3$[dj*x}Z$[E
